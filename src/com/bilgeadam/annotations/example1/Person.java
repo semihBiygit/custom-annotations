@@ -1,6 +1,6 @@
 package com.bilgeadam.annotations.example1;
 
-@VeryImportant
+@VeryImportant(value = 10)
 public class Person {
 	String firstName;
 	String lastName;

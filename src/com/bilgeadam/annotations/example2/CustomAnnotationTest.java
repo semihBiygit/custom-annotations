@@ -7,10 +7,15 @@ public class CustomAnnotationTest {
 	public static void main(String[] args) throws Exception {
 
 		Hello hello = new Hello();
-		Method method = hello.getClass().getMethod("sayHello");
 
+		Method method = hello.getClass().getMethod("sayHello");
 		MyAnnotation myAnno = method.getAnnotation(MyAnnotation.class);
-		System.out.println("Value is: " + myAnno.value());
+		System.out.println("sayHello's Value is: " + myAnno.value());
+
+		Method method2 = hello.getClass().getMethod("sayBye");
+		MyAnnotation myAnno2 = method2.getAnnotation(MyAnnotation.class);
+		System.out.println("sayBye's Value is: " + myAnno2.value());
+
 	}
 
 }
