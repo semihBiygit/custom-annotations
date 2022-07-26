@@ -1,4 +1,4 @@
-package com.bilgeadam.annotations.example3;
+package com.bilgeadam.annotations;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
